@@ -90,3 +90,36 @@ this can let you insert a 'p' before 'some-element'
 > remove the h1 element 
     h1.remove()
   
+
+### data binding 
+
+> working on more data
+    svg.selectAll('rect')
+      .data(d3.range(5))
+      .enter()
+      .append('rect')
+      .attr('width', 100)
+      .attr('height', 100)
+      .attr('y', 100)
+      .attr('x', (d, i) => {return i * 101})
+      .attr('fill', 'orange')
+
+    const moreData = d3.range(10)
+
+    var rects = svg.selectAll('rect').data(moreData)
+    rects.attr('fill', 'grey')
+    rects.enter()
+          .append('rect')
+          .attr('width', 100)
+          .attr('height', 100)
+          .attr('y', 100)
+          .attr('x', (d, i) => {return i * 101})
+          .attr('fill', 'lightblue')
+
+> working on less data
+    var rects = svg.selectAll('rect').data(moreData)
+    rects.attr('fill', 'grey')   
+    
+> remove the rest
+    rects.attr('fill', 'grey')
+    rects.exit().remove();
