@@ -59,5 +59,16 @@ const body = d3.select('body')
 select all p inside body 
 body.selectAll('p')
 
+### classed
 
+with classed method, we can add and remove class name
+
+    h1.attr('id', 'somethingelse')
+      .attr('class','myclass')
+      .classed('another-class', 'true')
+      .classed('myclass', false)
+    
+if we use attr method, it will override the whole class name
+
+    h1.attr('class', new-classname)
 
