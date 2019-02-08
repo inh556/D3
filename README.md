@@ -71,4 +71,17 @@ with classed method, we can add and remove class name
 if we use attr method, it will override the whole class name
 
     h1.attr('class', new-classname)
+ 
+### append
 
+    body.append('h1').text('at the end');
+
+this method can let you appen a new h1 element at the end of body
+
+    body.insert('p', 'some-element');
+this can let you insert a 'p' before 'some-element'
+
+### remove
+> remove the h1 element 
+    h1.remove()
+  
