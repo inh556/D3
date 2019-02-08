@@ -37,3 +37,5 @@ All major modern web browsers has SVB rendering support
       <polyline points=50, 150 50, 200 200, 200 200, 100 stroke='red' stroke-width='4' /> 
       <line x1='50' y1='50' x2='200' y2='200' stroke='blue' stroke-width='4' /> // line
     </svg>
+
+### Polygons and Polylines
