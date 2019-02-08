@@ -118,8 +118,22 @@ this can let you insert a 'p' before 'some-element'
 
 > working on less data
     var rects = svg.selectAll('rect').data(moreData)
-    rects.attr('fill', 'grey')   
-    
+    rects.attr('fill', 'grey')  
+
 > remove the rest
     rects.attr('fill', 'grey')
     rects.exit().remove();
+
+### scale 
+ > to create a linear scale with version 4 and 5 use API 
+    d3.scaleLinear()
+  
+set .clamp(true or false) to prevent overflow
+
+ 
+#### string interpolation
+
+const example = d3.scaleLinear().domain([0, 100]).range('0px', '100px')
+const example = d3.scaleLinear().domain([0, 100]).range('$0', '$1000')
+example(10) = '$100'
+
