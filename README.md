@@ -31,6 +31,8 @@ All major modern web browsers has SVB rendering support
 - Vectors can be scaled and will never get pixelated
 - SVG images requires a load of resources
 
+> this order goes from back to front
+
     <svg  width="500" height="500">
       <rect x = '25' y='25' width='200' height='200' fill='lime' stroke-width='4' stroke='pink' /> // renctangle
       <cicle cx='125' cy='125' r='75' fill='orange' /> // cicle
