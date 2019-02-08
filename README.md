@@ -40,6 +40,7 @@ All major modern web browsers has SVB rendering support
       <line x1='50' y1='50' x2='200' y2='200' stroke='blue' stroke-width='4' /> // line
       <text x='250' y = '250' style="text-anchor:middle"></text>
       <ellipse cx="200" cy="300" rx="50" ry="10"/>
+      <path d="m 100 100 L 100 200 L 200 100 z" fill"rgba(100, 100, 100, 0.5) />
     </svg>
 
 ### data binding
