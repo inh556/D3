@@ -38,4 +38,8 @@ All major modern web browsers has SVB rendering support
       <line x1='50' y1='50' x2='200' y2='200' stroke='blue' stroke-width='4' /> // line
     </svg>
 
-### Polygons and Polylines
+### data binding
+
+- binding means to associate elements with data
+- it allows to bridge the gap between the data and the elemtns on  the page
+
