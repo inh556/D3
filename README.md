@@ -43,3 +43,21 @@ All major modern web browsers has SVB rendering support
 - binding means to associate elements with data
 - it allows to bridge the gap between the data and the elemtns on  the page
 
+### select 
+
+
+Just like JQuery
+
+> select the first element of this tag
+    d3.select('element') 
+> select all the elments of tag of('element')
+    d3.selectAll('element')
+
+
+select body 
+const body = d3.select('body')
+select all p inside body 
+body.selectAll('p')
+
+
+
